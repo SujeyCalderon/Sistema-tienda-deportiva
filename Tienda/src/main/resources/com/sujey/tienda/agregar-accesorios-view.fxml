@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="426.0" prefWidth="639.0" style="-fx-background-color: #fbed93;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sujey.tienda.controllers.AgregarAccesoriosController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#666ce8" height="66.0" layoutY="-3.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="639.0" />
+      <ImageView fitHeight="70.0" fitWidth="117.0" layoutX="14.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/sh.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="184.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¡TU GRAN TIENDA DE DEPORTES!" wrappingWidth="391.0234375">
+         <font>
+            <Font name="Verdana Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="213.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ACCESORIOS">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INGRESE NOMBRE DEL PRODUCTO QUE DESEA AÑADIR:" wrappingWidth="305.2744140625">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INGRESE PRECIO DEL PRODUCTO QUE DESEA AÑADIR:" wrappingWidth="305.27441167709185">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="nombreProducto" layoutX="344.0" layoutY="120.0" prefHeight="48.0" prefWidth="266.0" style="-fx-background-radius: 10;" />
+      <TextField fx:id="precioProducto" layoutX="344.0" layoutY="200.0" prefHeight="48.0" prefWidth="266.0" style="-fx-background-radius: 10;" />
+      <Button fx:id="inGuardar" layoutX="259.0" layoutY="354.0" mnemonicParsing="false" onMouseClicked="#OnMouseClickedinGuardar" prefHeight="41.0" prefWidth="104.0" style="-fx-background-radius: 10; -fx-background-color: green;" text="GUARDAR" textFill="#fcf9f9">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="offWindow" layoutX="425.0" layoutY="354.0" mnemonicParsing="false" onMouseClicked="#onMouseClickedOffWindow" prefHeight="41.0" prefWidth="104.0" style="-fx-background-radius: 10; -fx-background-color: red;" text="SALIR" textFill="#fcf9f9">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Text layoutX="14.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INGRESE TIPO DEL PRODUCTO QUE DESEA AÑADIR:" wrappingWidth="305.27441167709185">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="tipoProducto" layoutX="344.0" layoutY="268.0" prefHeight="48.0" prefWidth="266.0" style="-fx-background-radius: 10;" />
+   </children>
+</AnchorPane>

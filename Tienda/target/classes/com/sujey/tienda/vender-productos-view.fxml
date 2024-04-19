@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #fbed93;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sujey.tienda.controllers.VenderProductosController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#666ce8" height="59.0" stroke="TRANSPARENT" strokeType="INSIDE" width="603.0" />
+      <ImageView fitHeight="70.0" fitWidth="117.0" layoutX="14.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/sh.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="178.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¡TU GRAN TIENDA DE DEPORTES!" wrappingWidth="385.0234375">
+         <font>
+            <Font name="Verdana Bold" size="20.0" />
+         </font>
+      </Text>
+      <Button fx:id="inSuple" layoutX="399.0" layoutY="150.0" mnemonicParsing="false" onMouseClicked="#OnMouseClickedSuple" prefHeight="59.0" prefWidth="139.0" style="-fx-background-radius: 10; -fx-background-color: green;" text="SUPLEMENTOS" textFill="#fcf9f9">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="inAcc" layoutX="39.0" layoutY="147.0" mnemonicParsing="false" onMouseClicked="#OnMouseClickedinAcc" prefHeight="59.0" prefWidth="139.0" style="-fx-background-radius: 10; -fx-background-color: green;" text="ACCESORIOS" textFill="#fcf9f9">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Text layoutX="27.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¿QUÉ DESEA VENDER?">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="offWindow" layoutX="446.0" layoutY="362.0" mnemonicParsing="false" onMouseClicked="#onMouseClickedOffWindow" prefHeight="49.0" prefWidth="129.0" style="-fx-background-radius: 10; -fx-background-color: red;" text="SALIR" textFill="#fcf9f9">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="OnRopa" layoutX="218.0" layoutY="150.0" mnemonicParsing="false" onMouseClicked="#onMouseClickedOnRopa" prefHeight="59.0" prefWidth="139.0" style="-fx-background-radius: 10; -fx-background-color: green;" text="ROPA" textFill="#fcf9f9">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="226.0" fitWidth="374.0" layoutX="14.0" layoutY="206.0">
+         <image>
+            <Image url="@../Images/fondoAgregar.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

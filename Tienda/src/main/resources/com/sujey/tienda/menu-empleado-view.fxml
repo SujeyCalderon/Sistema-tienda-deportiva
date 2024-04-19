@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #fbed93;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sujey.tienda.controllers.MenuEmpleadoController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#666ce8" height="59.0" stroke="TRANSPARENT" strokeType="INSIDE" width="604.0" />
+      <ImageView fitHeight="70.0" fitWidth="117.0" layoutX="23.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/sh.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="189.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¡TU GRAN TIENDA DE DEPORTES!" wrappingWidth="381.0234375">
+         <font>
+            <Font name="Verdana Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenido empleado">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Text>
+      <Button fx:id="inVend" layoutX="325.0" layoutY="70.0" mnemonicParsing="false" onMouseClicked="#OnMouseClickedinVend" prefHeight="48.0" prefWidth="199.0" style="-fx-background-radius: 10; -fx-background-color: green;" text="VENDER PRODUCTOS" textFill="#fcf9f9">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="255.0" fitWidth="560.0" layoutX="22.0" layoutY="131.0">
+         <image>
+            <Image url="@../Images/empleado.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="offWindow" layoutX="494.0" layoutY="329.0" mnemonicParsing="false" onMouseClicked="#onMouseClickedOffWindow" prefHeight="40.0" prefWidth="88.0" style="-fx-background-radius: 10; -fx-background-color: red;" text="SALIR" textFill="#fcf9f9">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
